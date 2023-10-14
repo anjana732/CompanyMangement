@@ -4,5 +4,30 @@
     box-sizing: border-box;
 }
 body{
-    
+  /*  background: linear-gradient(to top right,red, yellow);*/
+}
+.navbar ul{
+    background-color: rgb(228, 99, 99);
+}
+.navbar ul li{
+    display: block;
+    float: right;
+    padding: 9px;
+    margin: 7px;
+    font-weight: 600;  
+}
+.navbar ul li a{
+    color: rgb(240, 42, 81);
+    text-decoration: none;
+    font-size: large;
+}
+.navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(202, 89, 108);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
