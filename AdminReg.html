@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="modules.css">
+    <title>Admin Registration</title>
+</head>
+<body>
+    <img class="bg" src="Assets/AdBg.jpg" alt="backgroundImage">
+    <h1>Welcome To Admin Registration Page </h1>
+    <div class="container">
+        <h2>Sign Up </h2>
+        <form action="Admin.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="email" name="email" id="email" placeholder="Enter Your email">
+            <input type="number" name="age" id="age" placeholder="Enter Your age">
+            <input type="text" name="designation" id="designation" placeholder="Enter your designation">
+            <input type="date" name="doj" id="doj" placeholder="Enter Date of joining">
+            <input type="password" name="password" id="password" placeholder="Enter the password">
+            <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password">
+            <textarea name="address" id="address" placeholder="Enter your address"></textarea>
+            <input type="tel" name="phNum" id="phNum" placeholder="Enter your phone number">
+            <button type="submit" class="submit">Sign Up</button>
+            <button type="reset" class="reset" >Reset</button>
+            <div class="login">
+                <h4>Already a user ?</h4>
+                <a href="AdminLogin.html">Sign In</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
