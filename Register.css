@@ -10,7 +10,7 @@ body{
     align-items: center;
 }
 h1{
-    color: black;
+    color: rgb(214, 30, 76);
 }
 h2{
     text-align: center;
@@ -47,16 +47,31 @@ input, textarea{
 }
 .login{
     display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.login a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: rgb(214, 30, 76);
+    font-weight: 700;
+
 }
 button{
-    display: inline;
-    width: 20vh;
-    height: 4vh;
     border-radius: 5px;
+    padding: 5px;
+    margin: 4px;
+    width: 60%;
+    cursor: pointer;
+    margin-left: 90px; 
+
 }
 .submit{
-    background-color: rgb(8, 184, 8);
+    background-color: rgb(106, 235, 106);
+    
+
 }
 .reset{
-    background-color: rgb(240, 76, 17);
+    background-color: rgb(231, 117, 76);
+   
 }
