@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Page</title>
+    <link rel="stylesheet" type="text/css" href="Register.css">
 </head>
+
 <body>
     <img class="bg" src="Assets/AdBg.jpg" alt="backgroundImage">
+    <h1>Welcome to Our Company</h1>
     <div class="container">
-        <h2>Welcome to Our Company</h2>
+        <h2>Sign Up </h2>
         <form action="Employee.php" method="post">
             <input type="text" name="name" id="name" placeholder="Enter your name">
             <input type="email" name="email" id="email" placeholder="Enter Your email">
@@ -19,11 +23,14 @@
             <input type="password" name="repeat-password" id="repeat-password" placeholder="Repeat Password">
             <textarea name="address" id="address" placeholder="Enter your address"></textarea>
             <input type="tel" name="phNum" id="phNum" placeholder="Enter your phone number">
-            <button type="submit">Sign Up</button>
-            <button type="reset">Reset</button>
-            <h6>Already a user</h6>
-            <a href="Login.html">Sign In</a>
-         </form>
+            <button type="submit" class="submit">Sign Up</button>
+            <button type="reset" class="reset">Reset</button>
+            <div class="login">
+                <h4>Already a user</h4>
+                <a href="Login.html">Sign In</a>
+            </div>
+        </form>
     </div>
 </body>
+
 </html>
