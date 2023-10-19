@@ -3,28 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar ul li{
+body{
+    scroll-behavior: smooth;
+}
+.nv{
+    background-color:antiquewhite ;
+}
+nav{
+    margin: 10px;
+ 
+}
+
+.navbar ul{
     display: flex;
+    float: right;
+    list-style: none;
+    margin: 10px;
+    
 }
 .navbar ul li a {
     text-decoration: none;
     padding: 10px;
-    list-style: none;
-    float: right;
+   /* list-style: none;*/
+   font-size: 20px;
+   color: black;
 }
 .header{
-    background-color: rgb(255, 245, 246);
+    background-color: rgb(245, 237, 238);
     margin-top: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 h1{
     text-align: center;
     font-size: 70px;
     font-family: sans-serif;
     text-shadow: 3px;
+    margin-top: 25px;
+    color: rgba(1, 31, 13, 0.911);
 }
 .card{
-    background-color: aqua;
+    background-color: rgb(247, 227, 233);
     margin: 10px;
    /* padding: 20px;*/
     border-radius: 10px;
@@ -35,7 +53,10 @@ h1{
 .parent-card{
     display: flex;
     justify-content: space-between;
-    margin: 50px 80px 50px 80px;
+    margin: 50px 80px 30px 80px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    
     
 }
 .logo{
@@ -70,4 +91,50 @@ h1{
    /* text-justify: auto;*/
     text-align: center;
     font-size: large;
+}
+.about{
+    background-color: rgb(241, 218, 187);
+    margin-top: -50px;
+
+}
+.about h2{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: -30px;
+}
+.foot{
+    display: flex;
+    padding: 70px;
+    background-color: beige;
+    margin-top: -30px;
+
+}
+.contact{
+    width: 50%;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+form input, textarea{
+    margin: 7px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contact h2{
+    text-align: center;
+}
+
+button{
+    margin: 7px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(118, 247, 118);
+}
+.address{
+    margin: auto;
 }
