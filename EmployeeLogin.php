@@ -1,32 +1,33 @@
 <?php
-    $server ="localhost";
-    $user= "root";
-    $pass = "";
 
-    $con = mysqli_connect($server, $user, $pass);
+$server = "localhost";
+$user = "root";
+$pass = "";
 
-    if(!$con){
-        die("connection to this database failed due to".mysqli_connect_error());
+$con = mysqli_connect($server, $user, $pass);
+
+if (!$con) {
+    die("Connection to database failed due to" . mysqli_connect_error());
+}
+
+// Only run when form is submitted.
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = mysqli_real_escape_string($con, $_POST['email']);
+    $password = mysqli_real_escape_string($con, $_POST['password']);
+
+    $sql = "SELECT * FROM `Company`.`EmployeeTab` WHERE email = '$email' AND password = '$password'";
+
+    $result = $con->query($sql);
+
+    if ($result && $result->num_rows > 0) {
+        echo "Logged in successfully!";
+        // You can start a session here and set required session variables if needed.
+        header('Location: EmployeeDashboard.php');
+        exit;
+    } else {
+        echo "Invalid email or password!";
     }
-  //  echo "Connected to db"
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $age =$_POST['age'];
-    $designation = $_POST['designation'];
-    $doj = $_POST['doj'];
-    $password= $_POST['password'];
-    $address = $_POST['address'];
-    $phone = $_POST['phone'];
-
-    $sql = "INSERT INTO `DepartmentManagement`.`Department` (`name`, `email`, `password`, `username`) VALUES ('$name', '$email', '$password', '$username');";
-    echo $sql;
-    $sql ="INSERT INTO `EmployeeTab` (`Sno`, `name`, `email`, `age`, `designation`, `date`, `password`, `address`, `phone`) VALUES (NULL, 'anjana', 'abc@gmail.com', '78', 'swe', '2022-09-09', '1111', 'patna', '868547685');"
-
-    if($con->query($sql)== true){
-        echo "Seccessfully inserted";
-    }else{
-        echo "Error: $sql <br> $con->error";
-    }
     $con->close();
+}
 ?>
