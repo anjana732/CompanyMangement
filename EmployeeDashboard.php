@@ -13,7 +13,7 @@ if (!$con) {
 }
 
 // Query to fetch all data from the admin table
-$sql = "SELECT Sno, name, email, age, designation, date, address, phone FROM EmployeeTab";
+$sql = "SELECT Sno, name, email, age, designation, date, address, phone FROM AdminTab";
 $result = mysqli_query($con, $sql);
 ?>
 

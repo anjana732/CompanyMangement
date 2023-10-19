@@ -24,7 +24,7 @@
     $sql ="INSERT INTO `Company`.`EmployeeTab` (`name`, `email`, `age`, `designation`, `date`, `password`, `address`, `phone`) VALUES ('$name', '$email', '$age', '$designation', '$doj', '$password', '$address', '$phNum');";
     echo $sql;
     if($con->query($sql)== true){
-        echo "Seccessfully inserted";
+       // echo "Seccessfully inserted";
         header('Location: EmployeeLogin.html');
         exit;
     }else{

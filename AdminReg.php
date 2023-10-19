@@ -21,8 +21,11 @@
 
     //$sql = "INSERT INTO `DepartmentManagement`.`Department` (`name`, `email`, `password`, `username`) VALUES ('$name', '$email', '$password', '$username');";
     
-    $sql =" INSERT INTO  `Company`.`AdminTab` (`name`, `email`, `age`, `designation`, `date`, `password`, `address`, `phone`) VALUES ('$name', '$email', '$age', '$designation', '$doj', '$password', '$address', '$phNum');";
-    echo $sql;
+   // $sql =" INSERT INTO  `Company`.`AdminTab` (`name`, `email`, `age`, `designation`, `date`, `password`, `address`, `phone`) VALUES ('$name', '$email', '$age', '$designation', '$doj', '$password', '$address', '$phNum');";
+    
+
+     $sql ="INSERT INTO `Company`.`AdminTab` (`name`, `email`, `age`, `designation`, `date`, `password`, `address`, `phone`) VALUES ('$name', '$email', '$age', '$designation', '$doj', '$password', '$address', '$phNum');";
+     echo $sql;
     if($con->query($sql)== true){
         echo "Seccessfully inserted";
         header('Location: AdminLogin.html');
