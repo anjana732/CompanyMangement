@@ -12,29 +12,62 @@
     list-style: none;
     float: right;
 }
+.header{
+    background-color: rgb(255, 245, 246);
+    margin-top: 10px;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: sans-serif;
+    text-shadow: 3px;
+}
 .card{
     background-color: aqua;
     margin: 10px;
    /* padding: 20px;*/
     border-radius: 10px;
     width: 25%;
+    height: 40%;
+    overflow: hidden;
 }
 .parent-card{
     display: flex;
     justify-content: space-between;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 50px 80px 50px 80px;
+    
 }
 .logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
 }
 .image{
    width: 100%;
-   height: 40%;
+   height: 100%;
    overflow: hidden;
     /*border-radius: 10px;
     align-items: center;
     margin-left: 30px;*/
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-content{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.card-content p{
+    margin-top: 15px;
+}
+.header p{
+    margin: 40px 250px 40px 250px;
+   /* text-justify: auto;*/
+    text-align: center;
+    font-size: large;
 }
