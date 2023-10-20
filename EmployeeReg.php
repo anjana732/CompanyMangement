@@ -12,7 +12,7 @@
 
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $age =$_POST['age'];
+    $age = $_POST['age'];
     $designation = $_POST['designation'];
     $doj = $_POST['doj'];
     $password= $_POST['password'];
@@ -22,13 +22,14 @@
     //$sql = "INSERT INTO `DepartmentManagement`.`Department` (`name`, `email`, `password`, `username`) VALUES ('$name', '$email', '$password', '$username');";
     
     $sql ="INSERT INTO `Company`.`EmployeeTab` (`name`, `email`, `age`, `designation`, `date`, `password`, `address`, `phone`) VALUES ('$name', '$email', '$age', '$designation', '$doj', '$password', '$address', '$phNum');";
-    echo $sql;
+   // echo $sql;
     if($con->query($sql)== true){
-       // echo "Seccessfully inserted";
+      //  echo "Seccessfully inserted";
         header('Location: EmployeeLogin.html');
         exit;
     }else{
-        echo "Error: $sql <br> $con->error";
+       // echo "Error: $sql <br> $con->error";
+       //echo "Error";
     }
     $con->close();
 ?>
